@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Économisez toute l'année chez Amazon</title>
+    <link rel="icon" href="logo.jpeg" type="image/png">
+    <meta name="keywords" content="Économies Amazon, Réductions en ligne, Achats en ligne malins, Offres spéciales Amazon, Promotions Amazon, Bons de réduction Amazon, Économiser de l'argent en ligne, Remises Amazon, Codes de réduction Amazon, Économiser sur les achats en ligne, Économisez toute l'année chez Amazon">
+    <style>
+        /* Styles pour tout le site */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7; /* Couleur de fond légère */
+        }
+
+        header {
+            background-color: #232f3e; /* Bleu foncé d'Amazon */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Bannière promotionnelle */
+        #banniere-promotionnelle {
+            background-color: #ff9900; /* Couleur d'arrière-plan de la bannière */
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        /* Animation clignotante pour le texte à l'intérieur de la bannière */
+        #banniere-promotionnelle p {
+            animation: clignotant 5s linear infinite; /* Appliquer l'animation au texte à l'intérieur de la bannière */
+        }
+
+        /* Animation clignotante */
+        @keyframes clignotant {
+           0%, 100% {
+               opacity: 1;
+           }
+           50% {
+               opacity: 0;
+            }
+        }
+
+        /* Styles pour les sections */
+        section {
+            padding: 2em;
+        }
+
+        #carrousel, #mode-remboursement, #avantages {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 8000px; /* Ajustez la largeur maximale selon vos besoins */
+        }
+
+        #carrousel h2, #mode-remboursement h2, #avantages h2 {
+        color: #B12704; /* Couleur de texte inspirée d'Amazon */
+        font-size: 1.2em;
+        margin: 0.5em 0;
+        }
+
+        h2 {
+            color: #B12704; /* Couleur de texte inspirée d'Amazon */
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 1em 0;
+            background-color: white;
+        }
+
+        .carousel-item {
+            flex: 0 0 33.33%; /* Affiche 3 images à la fois */
+            padding: 1em;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .video-frame {
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin: 1em auto; /* Pour centrer horizontalement */
+        border-radius: 5px;
+        max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+        height: 400px; /* Hauteur personnalisée de la vidéo */
+        overflow: hidden; /* Masquer tout dépassement de contenu */
+        }
+
+        .video-frame iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        }
+
+       .video-frame p {
+       text-align: center;
+       }
+
+        .promo-list {
+            color: #232f3e;
+            text-align: center;
+        }
+
+        .promo-list h3 {
+            color: #ff9900;
+        }
+
+        .promo-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .promo-list li {
+            margin-bottom: 10px;
+        }
+
+        .commentaires-container {
+        display: flex;
+        justify-content: space-between;
+
+        }
+        /* Styles pour centrer le contenu dans les cadres clients */
+        .cadre-client {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+
+        .image-client {
+        max-width: 100px;
+        border-radius: 50%; /* Pour arrondir l'image */
+        }
+
+        .info-client {
+        margin-top: 10px;
+        }
+
+        .info-client h3 {
+        font-weight: bold;
+        }
+
+        .commentaire-texte {
+        margin-top: 10px;
+       }
+
+        /* Style pour les boutons */
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff9900; /* Couleur de fond du bouton */
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px; /* Bordure arrondie */
+        cursor: pointer;
+        }
+
+        .button:hover {
+        background-color: #e68a00; /* Changement de couleur au survol */
+        }
+        /* Pied de page */
+        footer {
+        background-color: #131A22; /* Bleu encore plus foncé pour le pied de page */
+        color: white; /* Forcer le texte en blanc */
+        text-align: center;
+        padding: 1em 0;
+        clear: both; /* Evite la superposition avec d'autres éléments */
+        font-weight: bold; /* Mettre le texte en gras */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Haut de page -->
+    <header>
+        </div>
+        <h1>Économisez toute l'année chez Amazon.</h1>
+        <nav>
+            <ul>
+                <li><a href="#avantages">Avantages</a></li>
+                <li><a href="#mode-remboursement">Mode de Remboursement</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#videos">Vidéos</a></li>
+                <li><a href="#prix-reduction">Prix et Réductions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière promotionnelle clignotante -->
+    <div id="banniere-promotionnelle">
+        <p>🎉 Profitez de 5% de réduction sur tous les articles Amazon toute l'année ! 🎉</p>
+        <a href="https://www.amazon.fr/?&_encoding=UTF8&tag=djewel-21&linkCode=ur2&linkId=2f92e998afd18f4a9b5449cc799c2992&camp=1642&creative=6746" target="_blank">Achetez maintenant</a>
+    </div>
+
+    <section id="carrousel" style="text-align: center;">
+        <h2>Produit Populaire en Avant</h2>
+        <div class="carousel-container" style="display: flex; justify-content: center; align-items: center; height: 600px;">
+            <div class="carousel-item">
+                <a href="https://www.amazon.fr/PlayStation-5-Digital-Edition-Console/dp/B08H97NYGP/?_encoding=UTF8&amp;pd_rd_w=kyUIW&amp;content-id=amzn1.sym.06035d14-c1fb-4f85-b947-a35999f228d1%253Aamzn1.symc.adba8a53-36db-43df-a081-77d28e1b71e6&amp;pf_rd_p=06035d14-c1fb-4f85-b947-a35999f228d1&amp;pf_rd_r=TMRVDZJA3X71NR82QBRJ&amp;pd_rd_wg=Iqk6S&amp;pd_rd_r=1d9ea678-ef8a-4e61-a54e-10af32421a62&amp;ref_=pd_gw_ci_mcx_mr_hp_atf_m&_encoding=UTF8&tag=djewel-21&linkCode=ur2&linkId=15fe8f2628fbe695ea527ee13d33a04a&camp=1642&creative=6746">
+                    <img src="71p6rZnGPoL._AC_UL480_FMwebp_QL65_.webp" alt="Description de la photo 1" style="max-width: 100%;">
+                    <p>Playstation Sony 5 Console - Digital Edition (Damaged Packaging) (UK) (PS5)</p>
+                    <p><strong>Prix avant réduction :</strong> 579,90€</p>
+                    <p><strong>Prix après réduction :</strong> 550.99€</p>
+                    <p><strong>Réduction applicable :</strong> <span style="color: red; font-weight: bold;">5%</span></p>
+                    <button class="button">Acheter maintenant</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mode-remboursement" style="text-align: center;">
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px; background-color: #f7f7f7; display: inline-block; max-width: 600px;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;"><strong>Mode de Remboursement</strong></h2>
+            <div style="text-align: center;">
+                <img src="rembousment.jpeg" alt="Image illustrative du mode de remboursement" style="max-width: 100%; border-radius: 5px;">
+            </div>
+            <h2 style="font-size: 20px; margin-top: 20px;">Procédure pour être éligible</h2>
+            <ol style="list-style: none; padding-left: 0;"> <!-- Ajout de styles CSS pour masquer les numéros -->
+                <li>Utilisez le bot Telegram pour sélectionner une catégorie de produit.</li>
+                <li>Envoyez-nous le lien de votre produit Amazon éligible.</li>
+                <li>Entrez le prix de l'article acheté.</li>
+                <li>Recevez un lien personnalisé avec une remise de 5 % appliquée.</li>
+                <li>Utilisez le bot pour consulter vos remboursements en cours et le montant total approuvé.</li>
+                <li>Pour obtenir votre remboursement, fournissez une preuve d'achat (facture ou reçu).</li>
+            </ol>
+    
+            <p style="font-size: 16px; margin-top: 20px;">Note : Les remboursements sont conditionnés à la fourniture d'une preuve d'achat valide.</p>
+            <p style="font-size: 16px; margin-top: 20px;">Rejoignez notre bot Telegram dès maintenant et commencez à économiser!</p>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="avantages" style="text-align: center;">
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px; background-color: #f7f7f7; display: inline-block; max-width: 600px;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;"><strong>Les avantages de notre service</strong></h2>
+            <div style="text-align: center;">
+                <img src="OIP.jpeg" alt="Image illustrative des avantages de notre service" style="max-width: 100%; border-radius: 5px;">
+            </div>
+            <p style="font-size: 16px; margin-top: 20px;">
+                <strong>Découvrez les avantages incroyables de notre service !</strong> Profitez de réductions exclusives sur les produits Amazon toute l'année. Rejoignez notre bot Telegram pour rester informé des offres spéciales et des promotions.
+            </p>
+            <p style="font-size: 16px; margin-top: 20px; margin-bottom: 0;">Vous voulez en savoir plus ?</p>
+            <p style="text-align: center; margin-top: 0;">
+                <a class="btn" href="https://www.amazon.fr/?&_encoding=UTF8&tag=djewel-21&linkCode=ur2&linkId=2f92e998afd18f4a9b5449cc799c2992&camp=1642&creative=6746" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #ff9900; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Découvrez nos articles</a> 
+                <a class="btn" href="https://t.me/RemboursementAmazonBot" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #ff9900; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Rejoignez notre bot Telegram</a>
+            </p>
+        </div>
+    </section>
+    
+    
+    
+    <section id="amazon-prime-offer" style="text-align: center;">
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 5px; background-color: #f7f7f7; display: inline-block; max-width: 600px;">
+            <h2 style="font-size: 24px; margin-bottom: 20px;">Offre d'abonnement gratuit d'un mois à Amazon Prime</h2>
+            <div style="text-align: center;">
+                <img src="foote.jpg" alt="Image illustrative de l'offre Amazon Prime" style="max-width: 100%; border-radius: 5px;">
+            </div>
+            <p style="font-size: 16px; margin-top: 20px;">
+                Profitez d'un mois d'abonnement gratuit à Amazon Prime et bénéficiez de tous les avantages exclusifs, y compris la livraison rapide, la diffusion en continu de films et de séries TV, et bien plus encore.
+            </p>
+            <p style="font-size: 16px; margin-top: 20px;">Pour en savoir plus et vous inscrire, cliquez sur le lien ci-dessous :</p>
+            <a class="btn" href="https://www.amazon.fr/amazonprime?_encoding=UTF8&primeCampaignId=prime_assoc_ft?tag=djewel-21" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #ff9900; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; margin-top: 20px;">S'inscrire maintenant</a>
+        </div>
+    </section>
+    
+    <div style="text-align: center;">
+        <p><strong style="color: red;">Tuto pour utiliser notre bot de remboursement :</strong> <a class="btn" href="https://t.me/RemboursementAmazonBot" target="_blank">Accéder au bot</a></p>
+        <p><strong>Pour plus d'informations, contactez-nous.</strong></p>
+    </div>
+    
+    <!-- Vidéo et Mode de Remboursement -->
+    <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dZQ7fZmbXbo" frameborder="0" allowfullscreen></iframe>
+        <p>Description de la vidéo</p>
+    </div>
+
+    <section id="commentaires-clients">
+        <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; background-color: #f7f7f7;">
+            <h2 style="text-align: center;">Commentaires Clients</h2>
+    
+            <div class="commentaires-container">
+                <!-- Premier Commentaire -->
+                <div class="commentaire">
+                    <div class="cadre-client">
+                        <img src="client1.jpg" alt="Image du Client 1" class="image-client">
+                        <div class="info-client">
+                            <h3><strong>Sophie Lambert</strong></h3>
+                            <p class="commentaire-texte">"J'ai adoré votre service, les réductions sont incroyables et la livraison est toujours rapide. Je recommande vivement!"</p>
+                            <p>15/12/2023</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Deuxième Commentaire -->
+                <div class="commentaire">
+                    <div class="cadre-client">
+                        <img src="client2.jpg" alt="Image du Client 2" class="image-client">
+                        <div class="info-client">
+                            <h3><strong>Thomas Martin</strong></h3>
+                            <p class="commentaire-texte">"C'est le meilleur service que j'ai utilisé jusqu'à présent. Les avantages et les promotions sont fantastiques."</p>
+                            <p>12/03/2023</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Troisième Commentaire -->
+                <div class="commentaire">
+                    <div class="cadre-client">
+                        <img src="client3.avif" alt="Image du Client 3" class="image-client">
+                        <div class="info-client">
+                            <h3><strong>Marie Dupont</strong></h3>
+                            <p class="commentaire-texte">"Je suis un client fidèle depuis des années. Les réductions m'ont fait économiser beaucoup d'argent."</p>
+                            <p>10/09/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <!-- Pied de page -->
+    <footer style="color: white;">
+        <p style="color: white;">Mentions légales | Droit d'auteur © 2024 Économisez toute l'année chez Amazon. | <a href="https://t.me/RemboursementAmazonBot" target="_blank">Rejoignez notre bot Telegram</a></p>
+    </footer>
+    </body>
+ </html>
